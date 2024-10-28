@@ -16,6 +16,9 @@
     padding: 10px 30px;
     border-radius: 10px;
     background-color: rgb(171, 120, 55);
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
 }
 .search input{
     outline: none;
@@ -32,9 +35,9 @@ input::placeholder{
     display: flex;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 80%;
-    margin:10% auto;
+    margin:10% 12%;
 }
 .to-do{
     /* border: 1px solid black; */
@@ -54,7 +57,7 @@ input::placeholder{
     color: gray;
 }
 .to-do span{
-  border: 2px solid rgb(198, 190, 190);
+  border: 1px solid rgb(204, 198, 198);
   border-top: none;
   border-right: none;
   border-bottom: none;
@@ -92,7 +95,7 @@ input::placeholder{
 }
 .in-progress h1{
     font-size: 20px;
-    border: 2px solid yellow;
+    border: 2px solid #f59e0b;
     padding: 10px 20px;
     border-top: none;
     border-left: none;
@@ -102,7 +105,7 @@ input::placeholder{
 
 }
 .in-progress span{
-    border: 2px solid rgb(198, 190, 190);
+    border: 1px solid rgb(204, 198, 198);
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -135,7 +138,7 @@ input::placeholder{
     color: gray;
   }
   .done1 span{
-    border: 2px solid rgb(198, 190, 190);
+    border: 1px solid rgb(204, 198, 198);
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -157,3 +160,15 @@ input::placeholder{
     padding:10px 20px;
     border-radius: 5px;
   }
+ 
+ .delete, .edit{
+ color: white;
+  font-size: 10px;
+  padding: 5px;
+  margin: 6px 0;
+  background-color: #f59e0b;
+ }
+ .delete{
+  background-color: red;
+}
+ 
