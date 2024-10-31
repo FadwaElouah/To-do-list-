@@ -37,22 +37,20 @@ submit.addEventListener("click", (e)=>{
                 <p class="text-white ">${taskPrioriter.value}</p>
                 <p class="text-white ">${taskDate.value}</p>
                 <button type="button" onclick="this.parentElement.remove()" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800 mt-4" id="delete" >Delete</button>
-                <button type="button" class="text-yellow-400 hover:text-white border border-orange-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-orange-300 dark:text-orange-300 dark:hover:text-white dark:hover:bg-orange-400 dark:focus:ring-yellow-900">Edit</button>
+                <button type="button"  class="text-yellow-400 hover:text-white border border-orange-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-orange-300 dark:text-orange-300 dark:hover:text-white dark:hover:bg-orange-400 dark:focus:ring-yellow-900">Edit</button>
             </div>
         `
+        taskTitle.value ='';
+        taskDesc.value ='';
+        taskStatus.value='';
+        taskPrioriter.value = '';
+        taskDate.value= '';
         
     }
-    dragItem();
-})
-function dragItem(){
-    let items = document.querySelectorAll(".item");
-    items.forEach(item=>{
-        item.addEventListener('dragstart',function(){
-            console.log("drag start")
-        })
-    })
     
-}
+})
+
+
 
 
 
