@@ -1,4 +1,4 @@
-*{
+/* *{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
@@ -7,6 +7,7 @@
   
     display: flex;
     justify-content: space-around;
+    border: 1px solid red;
 }
 .section1 button{
     padding: 10px 50px;
@@ -27,20 +28,20 @@
 }
 input::placeholder{
     color: black;
-}
+} */
 
-.section2{
-    /* border: 1px solid red; */
+/* .section2{
+   
   
     display: flex;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* border: 2px solid red; */
+   
     width: 80%;
     margin:10% 12%;
 }
 .to-do{
-    /* border: 1px solid black; */
+   
     width: 80%;
     color: rgb(86, 82, 82);
     font-size: 13px;
@@ -85,7 +86,10 @@ input::placeholder{
     border-left: 3px solid blue;    
     padding:10px 20px;
     border-radius: 5px;
-}  
+}   */
+
+
+
 
 .in-progress{
     width: 80%;
@@ -167,6 +171,7 @@ input::placeholder{
 @media (max-width:768px){
   .section1{
     width: 100%;
+    
  
   }
   .section1 button{
