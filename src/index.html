@@ -47,16 +47,16 @@
           <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Description</label>
       </div>
       <div class="relative z-0 w-full mb-5 group pt-6">
-        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-xl">Status</label>
+        <label for="floating_repeat_password" class="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-xl">Status</label>
         <select name="" id="taskStatus" class="w-full bg-transparent border-b-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white">
           <option value="" selected class="text-black"></option>
-          <option value="P3" class="text-green-500">To Do</option>
-          <option value="P2" class="text-yellow-500">Doing</option>
-          <option value="P1" class="text-red-700">Done</option>
+          <option value="To Do" class="text-green-500">To Do</option>
+          <option value="Doing" class="text-yellow-500">Doing</option>
+          <option value="Done" class="text-red-700">Done</option>
         </select>
     </div>
       <div class="relative z-0 w-full mb-5 group pt-6">
-          <label  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-xl ">Priorité</label>
+          <label  class="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-xl ">Priorité</label>
           <select name="" id="taskPrioriter" class="w-full bg-transparent border-b-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white">
             <option value="" selected class="text-black"></option>
             <option value="P3" class="text-green-500">P3 - Normale</option>
@@ -80,12 +80,12 @@
 <section class="  my-40 pl-20 flex w-full " id="section1">
 
     <!-- ===todo :=== -->
-   <div class=" ml-6 w-96 " >
+   <div class=" ml-6 w-96 box  " >
      <div class=" border-b-2 border-orange-500 p-4 w-72">
          <h1 class="text-gray-400 text-xl w-56">To do <span class="  pl-2  ">: 3</span></h1>
       </div>
 
-      <div class="box">
+      <div class=" w-72 rounded-lg">
 
       </div>
         
@@ -93,22 +93,22 @@
    </div>
 
  <!-- ====progress=== -->
-<div class=" ml-6 w-96 " >
+<div class=" ml-6 w-96 box" >
   <div class=" border-b-2 border-orange-500 p-4 w-72">
       <h1 class="text-gray-400 text-xl ">In progress <span class="  pl-2 ">: 1</span></h1>
   </div>
-  <div class="box">
+  <div class="  w-72 rounded-lg">
 
-  </div>
+  </div>  
 </div>
        
     <!-- ===done=== -->
 
-    <div class=" ml-6 w-96 " >
-      <div class=" border-b-2 border-orange-500 p-4 w-72 box">
+    <div class=" ml-6 w-96 box  " >
+      <div class=" border-b-2 border-orange-500 p-4 w-72 ">
           <h1 class="text-gray-400 text-xl ">Done <span class="  pl-2 ">: 2</span></h1>
       </div>
-      <div class="box">
+      <div class=" box-drag w-72 rounded-lg">
 
       </div>   
    </div>

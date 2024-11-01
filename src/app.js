@@ -9,7 +9,8 @@ let taskStatus = document.getElementById("taskStatus");
 let taskPrioriter = document.getElementById("taskPrioriter");
 let taskDate = document.getElementById("taskDate");
 let boxs = document.querySelectorAll(".box");
-let div = document.getElementById("div");
+let drag = null;
+
 
 
 
@@ -30,7 +31,7 @@ submit.addEventListener("click", (e)=>{
     e.preventDefault()
     if(taskTitle.value != '' && taskDesc.value != '' && taskStatus.value != '' && taskPrioriter.value != '' && taskDate.value != ''){
         boxs[0].innerHTML += `
-            <div   class=" item border border-gray-600  mt-5 rounded-lg py-3 pl-2 w-72" draggable="true" id="div" >
+            <div   class=" item border border-gray-600  mt-5 rounded-lg py-3 pl-2 w-72 cursor-move" draggable="true" >
                 <h2 class="text-white text-3xl ">${taskTitle.value}</h2>
                 <p class="text-white ">${taskDesc.value}</p>
                 <p class="text-white ">${taskStatus.value}</p>
@@ -47,8 +48,40 @@ submit.addEventListener("click", (e)=>{
         taskDate.value= '';
         
     }
+    dragItem();
     
 })
+function dragItem(){
+    let items = document.querySelectorAll('.item');
+    items.forEach(item=>{
+        item.addEventListener('dragstart',function(){
+            drag = item;
+            item.style.opacity = '0.5';
+            
+        })
+        item.addEventListener('dragend',function(){
+            drag = null;
+            item.style.opacity = '1';
+            
+        })
+
+        boxs.forEach(box=>{
+            box.addEventListener('dragover',function(e){
+                e.preventDefault();
+               
+            })
+            box.addEventListener('dragleave',function(){
+               
+            })
+            box.addEventListener('drop',function(){
+                box.append(drag);
+            })
+        })
+
+    })
+}
+
+
 
 
 
