@@ -12,7 +12,7 @@
 <body class="bg-slate-800  " id="body">
 <section class=" my-6 flex  md:ml-64  space-x-20">
 
-    <button class=" text-sm sm:text-base  relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden md:text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-orange-800" id="btn">
+    <button class="text-sm sm:text-base  relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden md:text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-orange-800" id="btn">
       <span class=" relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
      Add Task +
       </span>
@@ -25,7 +25,7 @@
   
    </div>
 
-   <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-orange-800">
+   <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-600 to-blue-500 group-hover:from-orange-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-orange-800" id="filterPriorityBtn">
     <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
    Filtrer les taches
     </span>
@@ -81,7 +81,7 @@
     <!-- ===todo :=== -->
    <div class="ml-6 w-96 box" >
      <div class=" border-b-2 border-orange-500 p-4 w-72">
-         <h1 class="text-gray-400 text-xl w-56">To do <span class="  pl-2  ">: 3</span></h1>
+         <h1 class="text-gray-400 text-xl w-56">To do <span id="todoCount" class="  pl-2  ">: 3</span></h1>
       </div>
 
     
@@ -104,7 +104,7 @@
  <!-- ====progress=== -->
 <div class="ml-6 w-96 box" >
   <div class=" border-b-2 border-orange-500  p-4 w-72">
-      <h1 class="text-gray-400 text-xl ">In progress <span class="  pl-2 ">: 1</span></h1>
+      <h1 class="text-gray-400 text-xl ">In progress <span id="inProgressCount" class="  pl-2 ">: 1</span></h1>
   </div>
  
     <div   class=" item border border-gray-600  mt-5 rounded-lg py-3 pl-2 w-72 cursor-move" draggable="true" >
@@ -123,7 +123,7 @@
 
     <div class="w-96 box ml-6 " >
       <div class=" border-b-2 border-orange-500 p-4 w-72 ">
-          <h1 class="text-gray-400 text-xl ">Done <span class="  pl-2 ">: 2</span></h1>
+          <h1 class="text-gray-400 text-xl ">Done <span id="doneCount" class="  pl-2 ">: 2</span></h1>
       </div>
     
         <div   class=" item border border-gray-600  mt-5 rounded-lg py-3 pl-2 w-72 cursor-move" draggable="true" >

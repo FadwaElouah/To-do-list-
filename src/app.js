@@ -96,13 +96,6 @@
             
         }
         dragItem();
-        // if (taskTitle.value !=='',        taskStatus.value !=='',taskPrioriter.value !==''
-        //    , taskDate.value !==''
-            
-        //  ) {
-        //         main.classList.add("hidden");
-        //         section1.classList.remove("hidden");
-        //     }
         
         
     })
@@ -137,20 +130,34 @@
     }
 
 
-    // =============== filter
-    priorityFilter.addEventListener("change",()=>{
-        const selectedPriority = priorityFilter.value;
-        const tasks = document.querySelectorAll(".item");
-        tasks.forEach(task=>{
-            const taskPrioriter = task.querySelector("p:nth-child(4)").textContent.trim();
-            if(taskPrioriter===selectedPriority){
-                task.style.display = "block";
-            }
-            else{
-                task.style.display = "none";
-            }
-        })
-    })
+    function updateTaskCounts() {
+        const todoCount = document.getElementById("todoCount");
+        const inProgressCount = document.getElementById("inProgressCount");
+        const doneCount = document.getElementById("doneCount");
+    
+        const todos = document.querySelectorAll(".box:nth-child(1) .item");
+        const inProgress = document.querySelectorAll(".box:nth-child(2) .item");
+        const done = document.querySelectorAll(".box:nth-child(3) .item");
+    
+        todoCount.textContent = `: ${todos.length}`;
+        inProgressCount.textContent = `: ${inProgress.length}`;
+        doneCount.textContent = `: ${done.length}`;
+    }
+
+
+  // Sélectionnez le bouton de filtrage
+let filterPriorityBtn = document.getElementById("filterPriorityBtn");
+
+// Ajoutez l'événement click
+filterPriorityBtn.addEventListener("click", () => {
+    // Demandez à l'utilisateur de choisir une priorité
+    let selectedPriority = prompt("Choisissez la priorité à filtrer (par exemple : Haute, Moyenne, Basse)");
+
+    // Vérifiez si l'utilisateur a entré une priorité
+    if (selectedPriority) {
+        filterTasksByPriority(selectedPriority);
+    }
+});
 
 
     
